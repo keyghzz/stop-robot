@@ -27,7 +27,7 @@ digitalWrite(6, LOW);
 digitalWrite(7, LOW);
 digitalWrite(6, LOW);
 Serial.println("ran");
-delay(1000)
+delay(1000);
 }
 
 void loop() {
