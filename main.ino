@@ -55,7 +55,7 @@ void loop() {
   Serial.print("cm");
   Serial.println();
 
-  if(in > 10.0)
+  if(inches > 10.0)
   {
     goStraight();
   }
