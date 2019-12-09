@@ -55,9 +55,8 @@ void loop() {
   Serial.print("cm");
   Serial.println();
 
-  if(cm > 10.0)
+  if(in > 10.0)
   {
     goStraight();
   }
-  delay(100);
 }
