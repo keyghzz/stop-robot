@@ -55,7 +55,7 @@ void loop() {
   Serial.print("cm");
   Serial.println();
 
-  while(cm > 10.0)
+  if(cm > 10.0)
   {
     goStraight();
   }
