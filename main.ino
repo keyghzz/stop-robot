@@ -21,13 +21,13 @@ void goStraight()   //run both motors in the same direction
 digitalWrite(7, HIGH);
 digitalWrite(6, LOW);
 // set speed to 150 out 255
-// uncomment and remove jumper
+// uncomment and remove jumper to customize speed
 // analogWrite(EnB, 200);
+delay(250); //tweak this depending on the rotation of the motor (only 1 step must be done during this time)
 // now turn off motors
 digitalWrite(7, LOW);
 digitalWrite(6, LOW);
 Serial.println("ran");
-delay(250);
 }
 
 void loop() {
@@ -55,7 +55,7 @@ void loop() {
   Serial.print("cm");
   Serial.println();
 
-  if(inches > 10.0)
+  if(inches > 6.0)
   {
     goStraight();
   }
